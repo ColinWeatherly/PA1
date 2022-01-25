@@ -6,12 +6,26 @@ namespace CSCI_352_PA1
 {
     public abstract class Animal
     {
-        private Animal()
+
+        private string Name;
+        private int Age;
+        private string Noise;
+        private int Weight;
+
+        public Animal()
         {
-            string Name = "Default";
-            int Age = 1;
-            string Noise = "GRAWR";
-            int Weight = 100;
+            Name = "Steve";
+            Age = 1;
+            Noise = "GRAWR";
+            Weight = 10;
+        }
+
+        public Animal(string animName, int animAge, string animNoise, int animWeight)
+        {
+            Name = animName;
+            Age = animAge;
+            Noise = animNoise;
+            Weight = animWeight;
         }
 
         public abstract void printInfo();
@@ -19,6 +33,30 @@ namespace CSCI_352_PA1
         public abstract void makeNoise();
 
         public abstract void ageUp();
+
+        public string GetName
+        {
+            get { return Name; }
+            set { Name = value; }
+        }
+
+        public int GetAge
+        {
+            get { return Age; }
+            set { Age = value; }
+        }
+
+        public string GetNoise
+        {
+            get { return Noise; }
+            set { Noise = value; }
+        }
+
+        public int GetWeight
+        {
+            get { return Weight; }
+            set { Weight = value; }
+        }
 
     }
 }
