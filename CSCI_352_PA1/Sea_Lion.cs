@@ -4,12 +4,12 @@ using System.Text;
 
 namespace CSCI_352_PA1
 {
-    public class Cat : Animal
+    public class Sea_Lion : Animal
     {
-        public Cat() : base()
+        public Sea_Lion() : base()
         { }
 
-        public Cat(string animName, int animAge, int animWeight) : base(animName, animAge, "Meoooow", animWeight)
+        public Sea_Lion(string animName, int animAge, int animWeight) : base(animName, animAge, "Arf! Arf!", animWeight)
         { }
 
         public override void AgeUp()
@@ -21,16 +21,15 @@ namespace CSCI_352_PA1
         public override void MakeNoise()
         {
             Console.WriteLine('\n' + GetName + " made a noise!\n");
-            Console.WriteLine(GetNoise + "\nIt now proceeds to follow you around the house.\n");
+            Console.WriteLine(GetNoise + "\nIt flaps its flippers adorably.\n");
         }
 
         public override void PrintInfo()
         {
-            Console.WriteLine('\n' + GetName + " the Cat's info:\n");
+            Console.WriteLine('\n' + GetName + " the Sea Lion's info:\n");
             Console.WriteLine("\tAge: " + GetAge + " years old\n");
             Console.WriteLine("\tNoise: " + GetNoise + "\n");
             Console.WriteLine("\tWeight: " + GetWeight + " kg\n");
         }
-
     }
 }

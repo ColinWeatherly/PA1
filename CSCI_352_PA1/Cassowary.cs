@@ -4,12 +4,12 @@ using System.Text;
 
 namespace CSCI_352_PA1
 {
-    public class Cat : Animal
+    public class Cassowary : Animal
     {
-        public Cat() : base()
+        public Cassowary() : base()
         { }
 
-        public Cat(string animName, int animAge, int animWeight) : base(animName, animAge, "Meoooow", animWeight)
+        public Cassowary(string animName, int animAge, int animWeight) : base(animName, animAge, "KAAAAAWWW!", animWeight)
         { }
 
         public override void AgeUp()
@@ -21,12 +21,12 @@ namespace CSCI_352_PA1
         public override void MakeNoise()
         {
             Console.WriteLine('\n' + GetName + " made a noise!\n");
-            Console.WriteLine(GetNoise + "\nIt now proceeds to follow you around the house.\n");
+            Console.WriteLine(GetNoise + "\nIts eyes pierce into your soul.\n");
         }
 
         public override void PrintInfo()
         {
-            Console.WriteLine('\n' + GetName + " the Cat's info:\n");
+            Console.WriteLine('\n' + GetName + " the Cassowary's info:\n");
             Console.WriteLine("\tAge: " + GetAge + " years old\n");
             Console.WriteLine("\tNoise: " + GetNoise + "\n");
             Console.WriteLine("\tWeight: " + GetWeight + " kg\n");

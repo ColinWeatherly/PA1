@@ -28,11 +28,11 @@ namespace CSCI_352_PA1
             Weight = animWeight;
         }
 
-        public abstract void printInfo();
+        public abstract void PrintInfo();
 
-        public abstract void makeNoise();
+        public abstract void MakeNoise();
 
-        public abstract void ageUp();
+        public abstract void AgeUp();
 
         public string GetName
         {
